@@ -1,1 +1,3 @@
 reflection  https://www.unrealengine.com/zh-CN/blog/unreal-property-system-reflection
+
+Unreal Build Tool (UBT) and Unreal Header Tool (UHT) act in concert to generate the data that is needed to power runtime reflection. UBT has to scan headers to do its job, and it remembers any modules that contain a header with at least one reflected type. If any of those headers have changed since the last compile, UHT is invoked to harvest and update the reflection data. UHT parses the headers, builds up a set of reflection data, and then generates C++ code containing the reflection data (contributing to a per-module .generated.inl), as well as various helpers and thunk functions (per-header .generated.h).
