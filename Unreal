@@ -6,3 +6,7 @@ Unreal Build Tool (UBT) and Unreal Header Tool (UHT) act in concert to generate 
 gc:  https://wiki.unrealengine.com/Garbage_Collection_Overview
 
 the garbage collector relies on reflection data!
+
+
+使用unreliable解决同步问题 https://www.gameres.com/806296.html
+
